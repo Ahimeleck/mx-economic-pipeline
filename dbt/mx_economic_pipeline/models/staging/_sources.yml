@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: mx-economic-pipeline
+    schema: raw
+    tables:
+      - name: tipo_cambio
+      - name: precio_wti
+ 

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mx_economic_daily
+    description: "Tabla diaria con tipo de cambio MXN/USD y precio WTI unidos por fecha"
+    columns:
+      - name: fecha
+        description: "Fecha del registro"
+        tests:
+          - not_null
+      - name: tipo_cambio
+        description: "Tipo de cambio MXN/USD (FIX Banxico)"
+        tests:
+          - not_null
+      - name: precio_wti
+        description: "Precio del petróleo WTI en USD" 
